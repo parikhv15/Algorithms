@@ -12,17 +12,16 @@ public class ReturnKthToLast {
 
         LinkedList<Integer> ll = new LinkedList<>();
 
-        ll.addFirst(5);
-        ll.addFirst(3);
+        ll.addFirst(1);
         ll.addFirst(2);
         ll.addFirst(3);
-        ll.addFirst(6);
         ll.addFirst(5);
-        ll.addFirst(1);
+        ll.addFirst(4);
 
         System.out.println(ll);
 
-        System.out.println(rl.returnKthLast(ll.getHead(), 1));
+//        ll.setHead(rl.insertionSortList(ll.getHead()));
+//        System.out.println(ll);
     }
 
     public int returnKthLast(ListNode head, int k) {
