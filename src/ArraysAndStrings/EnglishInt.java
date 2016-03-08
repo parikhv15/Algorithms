@@ -22,7 +22,7 @@ public class EnglishInt {
 
         EnglishInt ei = new EnglishInt();
 
-        System.out.println(ei.convertToEnglish(23344));
+        System.out.println(ei.convertToEnglish(100));
     }
 
     public String convertToEnglish(int number) {
@@ -47,7 +47,7 @@ public class EnglishInt {
     public String convertChunkToEnglish(int number) {
         LinkedList<String> parts = new LinkedList<>();
 
-        if (number > 100) {
+        if (number >= 100) {
             parts.addLast(smalls[number / 100] + " " + hundred);
             number %= 100;
         }

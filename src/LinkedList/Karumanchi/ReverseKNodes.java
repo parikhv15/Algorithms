@@ -44,7 +44,6 @@ public class ReverseKNodes {
             current.setNext(previous);
 
             previous = current;
-
             current = next;
 
             i++;
