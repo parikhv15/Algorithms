@@ -1,43 +1,52 @@
 package Leetcode;
 
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by vrajp on 3/18/2016.
  */
+
 public class Solution {
 
-    public static void main(String args[] ) throws Exception {
-        A a = new B();
+    enum COLORS {
+        blue (0),
+        red (1)
+        ;
 
-         a.mA();
-        ((B)a).mA();
-        ((B)a).mB();
-//        a.mB();
+        int code;
+
+        COLORS(int code) {
+            this.code = code;
+        }
+
+        public int getCode() {
+            return this.code;
+        }
+    };
+
+    public static void main(String args[] ) {
 
     }
 }
 
 class A {
+
     A() {
-//        System.out.println("C -> A");
+        System.out.println("C -> A");
     }
 
-    public void mA() {
+    public static void mA() {
         System.out.println("M -> A in A");
     }
 }
 
 class B extends A{
     B() {
-//        System.out.println("C -> B");
+        System.out.println("C -> B");
     }
 
-    public void mA() {
+    public static void mA() {
         System.out.println("M -> A in B");
     }
 
