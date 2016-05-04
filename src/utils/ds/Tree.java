@@ -165,7 +165,7 @@ public class Tree<E> {
                 }
 
                 if (!stack.isEmpty())
-                    node = stack.peek().getRight();
+                     node = stack.peek().getRight();
                 else
                     node = null;
             }

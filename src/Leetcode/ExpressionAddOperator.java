@@ -1,7 +1,5 @@
 package Leetcode;
 
-import utils.ds.ListNode;
-
 import java.util.ArrayList;
 import java.util.List;
 

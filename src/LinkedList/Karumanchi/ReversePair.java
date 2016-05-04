@@ -3,8 +3,6 @@ package LinkedList.Karumanchi;
 import utils.ds.LinkedList;
 import utils.ds.ListNode;
 
-import java.util.List;
-
 /**
  * Created by vrajp on 2/17/2016.
  */
