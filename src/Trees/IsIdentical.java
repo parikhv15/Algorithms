@@ -38,7 +38,7 @@ public class IsIdentical {
         if ((root1 == null && root2 == null))
             return true;
 
-        if ((root1 == null || root2 == null) || (root1.getValue() == -1 || root2.getValue() == -1))
+        if ((root1 == null || root2 == null) || (root1.getValue().equals(-1) || root2.getValue().equals(-1)))
             return false;
 
         return root1.getValue() == root2.getValue() &&

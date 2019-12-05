@@ -85,11 +85,11 @@ public class Tree<E> {
                 System.out.print(node.getValue() + " ");
                 size--;
 
-                if (node.getLeft() != null && node.getLeft().getValue() != -1) {
+                if (node.getLeft() != null && node.getLeft().getValue().equals(-1)) {
                     queue.offer(node.getLeft());
                 }
 
-                if (node.getRight() != null  && node.getRight().getValue() != -1) {
+                if (node.getRight() != null  && node.getRight().getValue().equals(-1)) {
                     queue.offer(node.getRight());
                 }
 

@@ -34,21 +34,21 @@ public class TreeSize {
     }
 
     public int findNumberOfNodes(TreeNode root) {
-        if (root == null || root.getValue() == -1)
+        if (root == null || root.getValue().equals(-1))
             return 0;
 
         return findNumberOfNodes(root.getLeft()) + findNumberOfNodes(root.getRight()) + 1;
     }
 
     public int findHeight (TreeNode root) {
-        if (root == null || root.getValue() == -1)
+        if (root == null || root.getValue().equals(-1))
             return 0;
 
         return Math.max(findHeight(root.getLeft()), findHeight(root.getRight())) + 1;
     }
 
     public int findNumberOfLeaf(TreeNode root) {
-        if (root == null || root.getValue() == -1)
+        if (root == null || root.getValue().equals(-1))
             return 0;
 
         if (root.getRight() == null && root.getLeft() == null) {
@@ -59,7 +59,7 @@ public class TreeSize {
     }
 
     public DiameterWrapper findDiameter (TreeNode root) {
-        if (root == null || root.getValue() == -1) {
+        if (root == null || root.getValue().equals(-1)) {
             return new DiameterWrapper(0,0);
         }
         DiameterWrapper dw = new DiameterWrapper();
@@ -76,12 +76,12 @@ public class TreeSize {
     }
 
     public void allTreePaths(TreeNode root, int[] path, int len) {
-        if (root == null || root.getValue() == -1)
+        if (root == null || root.getValue().equals(-1))
             return;
 
         path[len++] = (int) root.getValue();
 
-        if ((root.getLeft() == null && root.getRight() == null) || (root.getLeft().getValue() == -1 && root.getRight().getValue() == -1)) {
+        if ((root.getLeft() == null && root.getRight() == null) || (root.getLeft().getValue().equals(-1) && root.getRight().getValue().equals(-1))) {
             printArray(path, len);
         }
         else {

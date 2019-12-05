@@ -29,7 +29,7 @@ public class PathSum {
     }
 
     public int getMaxSumPath (TreeNode root, int sum) {
-        if (root == null || root.getValue() == -1)
+        if (root == null || root.getValue().equals(-1))
             return sum;
 
         int left = getMaxSumPath(root.getLeft(), sum + (int) root.getValue());

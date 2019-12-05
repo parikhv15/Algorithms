@@ -43,7 +43,7 @@ public class Palindrome {
         while (slow != null) {
             int top = stack.peek();
 
-            if (top != slow.getValue())
+            if (slow.getValue().equals(top))
                 return false;
 
             stack.pop();

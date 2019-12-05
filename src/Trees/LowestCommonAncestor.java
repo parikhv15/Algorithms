@@ -30,7 +30,7 @@ public class LowestCommonAncestor {
         if (root == null)
             return null;
 
-        if (root.getValue() == val1 || root.getValue() == val2)
+        if (root.getValue().equals(val1) || root.getValue().equals(val2))
             return root;
 
         TreeNode left = lowestCommonAncestor(root.getLeft(), val1, val2);
